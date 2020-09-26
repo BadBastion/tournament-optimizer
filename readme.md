@@ -1,5 +1,9 @@
 # Tournament-Optimizer
 
+<a href="https://colab.research.google.com/github/dasBurdock/tournament-optimizer"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="100" /></a>
+
+**Open this repository in [Colaboratory](https://colab.research.google.com/github/dasBurdock/tournament-optimizer)**
+
 ## Install:
 
 Start by installing [Anaconda](https://www.anaconda.com/distribution/) 
