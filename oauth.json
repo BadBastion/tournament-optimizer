@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tournament-optimizer",
+  "private_key_id": "a1f93e816b282f4c82cdb4b2a416ed1de181349f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2z8bt7Bksc37C\nayzEH0pMylH55rSB7Wj2wiXsDzXKp445Ish5b8S9Dhk71XyzgUpaqEoVBc5tLc+M\nCOS0ZDCxfriTqTtY1HzIk1KDk9cJi23at+k7X9PVcIBSIPgKZbchCGQT+qwnim+z\nw9S/w82Cg3aHQXEenKkabwxIrImPuQYrP6lE8HBAGsMecvSVQQhtlxgwj3g/84Rj\n9PonAqtxDOpmyP+3vzndIoPm+rNjQJBI2dhaRhQc8T0M7otbR9qNy3yHqf8xsee+\nTk4zJXSi0ZNinbfxMaxfhLUHVNXCRtPtfBSslsfizlaSJ+w/jYHXRiADIqiwVCLS\nQme4nxnnAgMBAAECggEAB8IkUc9F94+klDZdh//r9KZWzvbuN4q5Jv/GVuZZBL4S\nWHUUHP3pU5IC8CR3TlxGU41Lgj46LIKtNDw3DeYn9Ysd5OZhu7teMFpQPiqgDapP\n1zXG6DDWRKX+9tKqCYbs5rH8d/yYzHTLmM15fJ9KsXydeHqxL6NmadYcp1jrMvY3\nVsIGEfexUfhtrjrSwi5utWMoJIPI465pXAWshdDhZ5EuZH/X0uEwR0awsk2D7HfD\nu1CYAlHQrwUNuXMNoSz7uSMshuUE3We7QiOSP0pEpCcnBhr8/Y5AfXOM3gfNAsy9\nVJuY637h2NrrimVyf/W8661LABtOf/ylegnqaj2EAQKBgQD77tVQlqRBQTEuYSa/\nzu/dM3ZVI2qY/RouynRWrAwlSje9oYSMia3oZEIRskM6jwRmpTlct8Rcxfbhytcp\nZmczuIjEKw84mSunu0KZQyRJKHA7VdGvR4qzn2FA+b9uPIzOZmZQf+Wrc9/Op5xd\ntkSZLNURNJv1krbnYZO15rPKwQKBgQC5w0kDJM7y9DKCszAiZYB1Pt193agt2lp3\nP0R0R2m1uhuPaGfjGRyQQ3boLIk+93w0pXAR0y65eM/y1gYKbx1RGZiYgkLOOhh5\nhP6KNkcBaB0QJCyzMo7aOEfPtE10SqiVPCN+TlYMv7xNAsDb2EvlWEJMpypLetbm\nZDh4fnlWpwKBgQDkOeaQzQcb/lz5cRVTabouH3KxihYFZjST8uAVrGKMXYHFjk6v\nqgIbpseblGwG3ozUGBWxAuEmUkhnIARvAs+3MRLk80Ukts2vc5rPkN2MUM/rUMFW\nEm96bYYDAL0EtmGwkV9ayaJcAercIUcsNfRK9yxGG+y1OSXs0p6niMmTgQKBgQCT\nP34nlMzKftFvEvTLvyOVTJCrzcEbH6NoNOlhNp5Po8dm5L68oFIo9KFTpsHf/LMi\n1CTCrGC0OlSzy/0b1jop6B0yfsbPy/NMmCRgkGe2cL3g5pvcK+5aghRCS0y+KtP4\n/6Ou4g+JqY5siQsw+QIoOM7NDhETpbqlA7pToQUzrwKBgDpIc3t95m0b/blH1OBv\nHXqYayH6XGYEOp2kXY4f1UAS0hC2HOQwOwO2AN+1DQ2xmgKrv2UkbZrx0VdFaU2F\nnrbmEBu/1Z48W+eC1GyYSDL3Tu5HWCOkCqpnGyajrN8bqFz3w7AhsOwztHDOLy+8\n+cprM/ZJfw6lfGmPX1hw3Kei\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-314@tournament-optimizer.iam.gserviceaccount.com",
+  "client_id": "111402627406102750460",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-314%40tournament-optimizer.iam.gserviceaccount.com"
+}
