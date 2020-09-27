@@ -26,6 +26,13 @@ class Player:
 
         return cost ** 0.5
 
+    def flat_cost(self):
+        cost = 0
+        for play_count in self.history.values():
+            cost += play_count
+
+        return cost
+
 
 class Table:
     seats = []
