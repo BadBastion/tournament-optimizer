@@ -33,6 +33,13 @@ class Player:
 
         return cost
 
+    def min_cost(self, room_player_count):
+        cost = 0
+        for play_count in self.history.values():
+            cost += play_count
+
+        return (((cost / room_player_count) ** 2) * room_player_count) ** 0.5
+
 
 class Table:
     seats = []
@@ -92,7 +99,7 @@ class Room:
     def cost(self):
         cost = 0
         for table in self.tables:
-            cost += table.cost()
+            cost = table.cost()
 
         return cost
 

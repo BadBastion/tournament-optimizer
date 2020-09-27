@@ -13,7 +13,7 @@ def random_room(players, table_size):
 
     for table_i in range(table_count):
         table = Table(table_size)
-        for player_i in table_size:
+        for player_i in range(table_size):
             table[player_i] = players[table_i * 4 + player_i]
         tables.append(table)
 
