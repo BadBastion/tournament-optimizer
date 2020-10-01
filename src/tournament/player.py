@@ -10,7 +10,7 @@ class Player:
         self.history = history or {}
 
     def __repr__(self):
-        return f'{{ "name": "{self.name}", "history": {json.dumps(self.history)} }}'
+        return self.name
 
     def play_table(self, table):
         opponent_names = [player.name for player in table if player.name != self.name]
