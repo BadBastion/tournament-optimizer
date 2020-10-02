@@ -1,6 +1,5 @@
 import random
 from math import floor
-from src.tournament.room import random_room
 
 
 def random_swap(player_count, table_size):
@@ -25,27 +24,33 @@ def random_swap(player_count, table_size):
 
 
 def calculate_heat(iteration, max_iterations):
-    normal_progress = iteration + 1 / max_iterations
-    # logarithmically degrees speed from 1 to 0 as we make progress
+    normal_progress = 1 - (iteration / max_iterations)
+    # reduces heat from 1 to 0 as we make progress
     return normal_progress ** 2
 
 
-
+ONE_MILLIONTH = 10 ** -6
 def move_rating(old_cost, new_cost, heat):
-    cost_delta = (old_cost - (new_cost+0.01)) / (new_cost+0.01)
-    normal_cost_delta = 1 + cost_delta
+    cool = 1 - heat  # not being hot is pretty cool
+    new_cost = max(ONE_MILLIONTH, new_cost)  # diving by zero is bad for our health.
+    cost_delta = (old_cost - new_cost) / new_cost
 
-    # Returning early saves us from multiplying too many times
-    if normal_cost_delta > 1:
-        return 1
+    if cost_delta < 0:
+        # When the move makes cost worse we see a negative delta from 0 to -1
+        # In this case heat
+        normal_cost_delta = 1 + cost_delta
+        heat_exponent = 3 + cool * 5
     else:
-        return normal_cost_delta ** (1 + heat * 5)
+        normal_cost_delta = 1 / (1 + cost_delta)
+        heat_exponent = 1 / (1 + cool * 5)
+
+    return normal_cost_delta ** heat_exponent
 
 
-def simulated_annealing(players, table_size, iterations=1000):
+def simulated_annealing(starting_room, players, table_size, iterations=1000):
     player_count = len(players)
-    room = random_room(players, table_size)
-    cost = room.cost()
+    room = starting_room
+    cost = starting_room.cost()
 
     for i in range(iterations):
         swap = random_swap(player_count, table_size)
@@ -56,7 +61,7 @@ def simulated_annealing(players, table_size, iterations=1000):
             room.swap(swap)
             cost = new_cost
 
-    return room, cost
+    return room
 
 
 
